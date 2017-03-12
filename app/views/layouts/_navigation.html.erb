@@ -7,13 +7,18 @@
             <span class="icon-bar"></span>
         </button>
     </div>
-    <div class="container">
+
+    <div>
         <div id="navbar" class="navbar-collapse collapse">
+            <%= link_to image_tag("img/logo.png",size:"41x30"),root_path,class:"navbar-brand" %>
             <ul class="nav navbar-nav">
-                <li><%= link_to root_path do%><i class='fa fa-home'></i>Home<% end %></li>
-                <li><%= link_to "About",about_path %></li>
+                <li><%= link_to root_path do%>
+                    <i class='fa fa-home'></i>Home<% end %></li>
+                <li><%= link_to about_path do %>
+                    <i class="fa fa-info-circle"></i>About<% end %></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-book"></i>Menu
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -27,8 +32,42 @@
                         <li><%= link_to "Weekend Brunch","#" %></li>
                     </ul>
                 </li>
-                <li><%= link_to "Contact",contact_path %></li>
+                <li><%= link_to contact_path do %>
+                    <i class="fa fa-envelope"></i>Contact<% end %></li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a data-toggle="modal" data-target="#loginModal" ><i class="fa fa-user">Login</i></a></li>
+            </ul>
+
+
+
         </div>
+
     </div>
 </nav>
+<div class="modal fade" role="dialog" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline">
+          <input type="email" placeholder="email">
+          <input type="password" placeholder="password">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              Remember Me
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary btn-xs">Sign In</button>
+        
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

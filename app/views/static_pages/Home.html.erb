@@ -1,111 +1,62 @@
-<header class="jumbotron row-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8">
-                <h1>Ristorante con Fusion</h1>
-                <p style="padding:40px;"></p>
-                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-
-            </div>
-        </div>
-    </div>
-</header>
-
 <div class='container'>
     <div class="row row-content">
-        <div class="col-xs-12 col-sm-3 col-sm-push-9">
-            <p style="padding:20px;"></p>
-            <h3 align=center>Our Lipsmacking Culinary Creations</h3>
-        </div>
-        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-            <h2>Uthappizza</h2>
-            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            <p>
-                <a href="#">More &raquo;</a>
-            </p>
-        </div>
-    </div>
+        <div class="col-xs-12">
+            <div class="carousel slide" data-ride="carousel" id="mycarousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
 
-    <div class="row row-content">
-        <div class="col-xs-12 col-sm-3 col-sm-push-9">
-            <p style="padding:20px;"></p>
-            <h3 align=center>This Month's Promotions</h3>
-        </div>
-        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-            <h2>Weekend Grand Buffet</h2>
-            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
-            </p>
-            <p>
-                <a href="#">More &raquo;</a>
-            </p>
-        </div>
-    </div>
+                <!-----wrapper for slides------->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <%= image_tag "img/uthappizza.png",alt:"uthappiza" %>
+                        <div class="carousel-caption">
+                            <h2>Uthappizza
+                                <span class="label label-danger">Hot</span>
+                                <span class="badge">$4.99</span>
+                            </h2>
+                            <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
 
-    <div class="row row-content">
-        <div class="col-xs-12 col-sm-3 col-sm-push-9">
-            <p style="padding:20px;"></p>
-            <h3 align=center>Meet our Culinary Specialists</h3>
-        </div>
-        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-            <h2>Alberto Somayya</h2>
-            <h4>Executive Chef</h4>
-            <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
-            </p>
-            <p>
-                <a href="#">More &raquo;</a>
-            </p>
-        </div>
-    </div>
-</div>
+                            <%= link_to "More >>","#",class:"btn btn-primary btn-xs" %>
 
-<footer class="row-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-4 address">
-                <h5>Our Address</h5>
-                <address>
-                    121, Clear Water Bay Road<br>
-                    Clear Water Bay, Kowloon<br>
-                    HONG KONG<br>
-                    <i class="fa fa-phone"></i>: +852 1234 5678<br>
-                    <i class="fa fa-fax"></i>: +852 8765 4321<br>
-                    <i class="fa fa-envelope"></i>:
-                    <a href="mailto:confusion@food.net">confusion@food.net</a>
-                </address>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-              <div class="nav navbar-nav" style="padding: 40px 10px;">
-                    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-3x"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-3x"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-3x"></i></a>
-                    <a class="btn btn-social-icon btn-twitter fa-3x" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-youtube fa-3x" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-3x"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <%= image_tag "img/buffet.png",atl:'buffet' %>
+                        <div class="carousel-caption">
+                            <h2>Weekend Grand Buffet
+                                <span class="label label-danger">New</span>
+                            </h2>
+                            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
+                            </p>
+                            <%= link_to "More >>","#",class:"btn btn-primary btn-xs" %>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <%= image_tag "img/alberto.png",alt:"alberto" %>
+                        <div class="carousel-caption">
+                            <h2>Alberto Somayya</h2>
+                            <h4>Executive Chef</h4>
+                            <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                            <%= link_to "More >>","#",class:"btn btn-primary btn-xs" %>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <p style="padding:10px;"></p>
-                <p align=center>© Copyright 2015 Ristorante Con Fusion</p>
+                <!----------Control------------->
+                <a href="#mycarousel" class="left carousel-control" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#mycarousel" class="right carousel-control" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
     </div>
-</footer>
+
+    <%= render 'share/orderform' %>
+</div>

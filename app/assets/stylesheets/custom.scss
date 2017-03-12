@@ -2,67 +2,113 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-
-$themeblue:#7986cb;
-
+$themeblue: #7986cb;
 //General*******************************
-.body{
-  padding: 50px 0 0 0;
+.body {
+    padding: 50px 0 0;
 }
-
 //nav bar*****************************
-.navbar-inverse{
-  background: #394898;
-  .navbar-nav{
-    li{
-      a{
-        .fa{
-          margin-right: 2px;
+#navbar {
+    padding: 5px 10px;
+}
+
+#rememberme {
+    color: floralwhite;
+}
+
+.navbar-inverse {
+    background: #394898;
+
+    .navbar-nav {
+        li {
+            a {
+                .fa {
+                    margin-right: 2px;
+                }
+
+                &:hover {
+                    color: floralwhite;
+                }
+                font-size: 1.2em;
+            }
+
+            .dropdown-menu {
+                background-color: #a5afe3;
+
+                a {
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+            }
         }
-        color:floralwhite;
-        font-size:1.2em;
-      }
-      .dropdown-menu{
-        background-color: #a5afe3;
-        a{
-          &:hover{
-            background-color: #000;
-          }
-        }
-      }
     }
-  }
+}
+
+#reservebutton {
+    padding-top: 100px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.affix {
+    top: 100px;
+}
+//Breadcrum***************************
+
+.breadcrumb {
+    background-color: #d4d9f5;
+}
+//***********Carousel
+.carousel {
+    background: #1A237E;
+}
+
+.carousel .item {
+    height: 300px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
 }
 
 
-
-.row-header{
-  margin: 0px auto;
-  padding: 0px auto;
+//************
+.row-header {
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
-.row-content{
-  margin: 0px auto;
-  padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge;
-  min-height: 400px;
+.row-content {
+    margin: 0 auto;
+    padding: 50px;
+    border-bottom: 1px ridge;
+    min-height: 300px;
 }
 
-.row-footer{
-  background-color: lightgrey;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px;
+.row-footer {
+    background-color: lightgrey;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.address{
-  font-size: 80%;
-  margin: 0px;
-  color:hsl(120, 20, 45);
+.address {
+    font-size: 80%;
+    margin: 0;
+    color: hsl(120, 20, 45);
 }
 
-.jumbotron{
-  padding: 70px 30px 70px 30px;
-  margin: 0px auto;
-  background:$themeblue;
-  color:floralwhite;
+.jumbotron {
+    padding: 70px 30px;
+    margin: 0 auto;
+    background: $themeblue;
+    color: floralwhite;
 }

@@ -1,0 +1,69 @@
+<div id="Reserve" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <h4>Reserve Table</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+
+                    <div class="form-group row">
+                        <label for="guestsnumber" class="control-label col-sm-3">Number of Guests</label>
+                        <div class="col-sm-9">
+                            <% 1.upto(6) do |n| %>
+                            <label class="radio-inline"><input type="radio" name="inlineradioOptions<%=" #{n}" %>"><%= "#{n}" %></label>
+                            <% end %>
+                        </div>
+                    </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3">Smoking Section</label>
+    <div class="col-sm-9">
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-success active" >
+          <input type="radio" checked>NonSmoking
+        </label>
+        <label class="btn btn-danger">
+          <input type="radio" >Smoking
+        </label>
+      </div>
+    </div>
+  </div>
+                    <div class="form-group">
+                        <label for="dateandtime" class="col-sm-3 control-label">Date and Time</label>
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <input type="date" placeholder="Date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <input type="time" placeholder="Time">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-bottom:50px;"></p>
+                        <div class="col-sm-3 col-sm-offset-3">
+                            <%= link_to "Reserve","#",class:"btn btn-primary" %>
+                        </div>
+
+                    </div>
+
+                </form>
+                <p style="margin-bottom:50px;"></p>
+                <div class="alert alert-warning alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    Please contact us if you have more than 6 people.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
